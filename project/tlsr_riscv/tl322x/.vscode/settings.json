@@ -1,0 +1,21 @@
+{
+    "cmake.buildDirectory": "${workspaceFolder}/cmake_build",
+    "cmake.preferredGenerators": [
+        "Unix Makefiles",
+        "Ninja"
+    ],
+    "cmake.configureSettings": {
+        "TOOLCHAIN_PATH": "C:\\TelinkIoTStudio\\RDS\\V5.1.2\\toolchains\\nds32le-elf-mculib-v5f",
+        "CMAKE_C_STANDARD_LIBRARIES": "",
+        "CMAKE_CXX_STANDARD_LIBRARIES": "",
+        "CMAKE_C_FLAGS_DEBUG": "",
+        "CMAKE_C_FLAGS_RELEASE": "",
+        "CMAKE_C_COMPILER_FORCED": 1,
+        "CMAKE_CXX_COMPILER_FORCED": 1
+    },
+    "cmake.environment": {
+        "PATH": "C:\\TelinkIoTStudio\\RDS\\V5.1.2\\cygwin\\bin;C:\\TelinkIoTStudio\\bin;$PATH"
+    },
+    "cmake.parallelJobs": 24,
+    "cmake.sourceDirectory": "C:\\Git\\tl_platform_sdk"
+}

@@ -1,0 +1,719 @@
+
+/cygdrive/c/Git/led-demo-tlsr8258/build/GPIO_Demo:     file format elf32-littleriscv
+/cygdrive/c/Git/led-demo-tlsr8258/build/GPIO_Demo
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x20000388
+
+Program Header:
+0x70000003 off    0x0004867a vaddr 0x00000000 paddr 0x00000000 align 2**0
+         filesz 0x00000040 memsz 0x00000000 flags r--
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x20000000 align 2**12
+         filesz 0x00000382 memsz 0x00000382 flags rwx
+    LOAD off    0x00001388 vaddr 0x20000388 paddr 0x20000388 align 2**12
+         filesz 0x00000010 memsz 0x00000010 flags r-x
+    LOAD off    0x00002000 vaddr 0x00080000 paddr 0x200003a0 align 2**12
+         filesz 0x00000001 memsz 0x00000001 flags rw-
+    LOAD off    0x00002008 vaddr 0x00080008 paddr 0x200003a1 align 2**12
+         filesz 0x00000026 memsz 0x00000026 flags rw-
+
+Sections:
+Idx Name              Size      VMA       LMA       File off  Algn  Flags
+  0 .retention_data   00000001  00000000  20000000  00001000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  1 .ram_code         0000037e  00000004  20000004  00001004  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .text             00000010  20000388  20000388  00001388  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  3 .data             00000001  00080000  200003a0  00002000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  4 .bss              00000000  00080008  200003a1  00000000  2**0  ALLOC
+  5 .sdk_version      00000026  00080008  200003a1  00002008  2**2  CONTENTS, ALLOC, LOAD, DATA
+  6 .debug_info       0000a3b7  00000000  00000000  0000202e  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  7 .debug_abbrev     00001443  00000000  00000000  0000c3e5  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  8 .debug_loc        00000392  00000000  00000000  0000d828  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+  9 .debug_aranges    00000070  00000000  00000000  0000dbba  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_ranges     000001c0  00000000  00000000  0000dc2a  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_line       00005351  00000000  00000000  0000ddea  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_str        00035505  00000000  00000000  0001313b  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .comment          0000003a  00000000  00000000  00048640  2**0  CONTENTS, READONLY
+ 14 .riscv.attributes 00000040  00000000  00000000  0004867a  2**0  CONTENTS, READONLY
+ 15 .debug_frame      00000184  00000000  00000000  000486bc  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .debug_macro      00007e4a  00000000  00000000  00048840  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .retention_data	00000000 .retention_data
+00000004 l    d  .ram_code	00000000 .ram_code
+20000388 l    d  .text	00000000 .text
+00080000 l    d  .data	00000000 .data
+00080008 l    d  .bss	00000000 .bss
+00080008 l    d  .sdk_version	00000000 .sdk_version
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .riscv.attributes	00000000 .riscv.attributes
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000004 l     F .ram_code	0000000c analog_busy
+00000010 l     F .ram_code	00000010 analog_txbuf_no_empty
+00000020 l     F .ram_code	0000000c mspi_busy
+0000002c l     F .ram_code	00000070 wait_condition_fails_or_timeout.constprop.0.isra.0
+20000388 l     F .text	00000010 sys_reboot
+0000009c l     F .ram_code	00000098 analog_read_reg8
+00000134 l     F .ram_code	000000c4 analog_write_reg8
+000001f8 l     F .ram_code	0000012c dr_putchar
+00080000 l     O .data	00000001 init_flag.0
+00000324 l     F .ram_code	0000005e sys_reboot_ram
+00080008 l     O .sdk_version	00000026 sdk_version
+00000000 l     O .retention_data	00000001 g_plic_preempt_en
+00009784  w      .debug_info	00000000 .hidden pc_interface.c.8a58ae85
+00020000 g       *ABS*	00000000 __D25F_DRAM_SIZE
+00000000 g       *ABS*	00000000 __jvt_base$
+00008377  w      .debug_info	00000000 .hidden sdk_version.c.6efc5fa1
+00080008 g       .sdk_version	00000000 _BSS_VMA_END
+0000723c  w      .debug_info	00000000 .hidden sd_adc.c.01abfdea
+00100000 g       *ABS*	00000000 FLASH_SIZE
+00000000 g       .retention_data	00000000 _ILM_USE_START
+00002433  w      .debug_info	00000000 .hidden gpio.c.6be810e9
+00005d37  w      .debug_info	00000000 .hidden keyscan.c.dc937d60
+00004000 g       *ABS*	00000000 __D25F_IRAM_SIZE
+00000686  w      .debug_info	00000000 .hidden adc.c.d9c38c29
+0000364f  w      .debug_info	00000000 .hidden i2c.c.f7555b25
+20000000 g       .retention_data	00000000 BIN_BEGIN
+000003c7 g       *ABS*	00000000 BIN_SIZE
+20000000 g       *ABS*	00000000 NDS_SAG_LMA_FLASH
+00000000  w      .retention_data	00000000 _RELAX_END_
+000022f5  w      .debug_info	00000000 .hidden error_handler.c.555c7e6a
+00000000         *UND*	00000000 _RESET_ENTRY
+00080008 g       *ABS*	00000000 _DLM_USE_SIZE
+0000704c  w      .debug_info	00000000 .hidden plmt.c.6a0e04bd
+00080000 g       *ABS*	00000000 _STACK_TOP
+00000382 g       *ABS*	00000000 _ILM_USE_SIZE
+00000382 g       .ram_code	00000000 _RAMCODE_VMA_END
+00000382 g       *ABS*	00000000 _ILM_USE_END
+00080030 g       .sdk_version	00000000 _end
+000083cd  w      .debug_info	00000000 .hidden app.c.40507240
+00009eed  w      .debug_info	00000000 .hidden printf.c.0da4a137
+
+
+
+Disassembly of section .ram_code:
+
+00000004 <analog_busy>:
+analog_busy():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:62
+   4:	801407b7          	lui	a5,0x80140
+   8:	1827c503          	lbu	a0,386(a5) # 0x80140182 <sys_reboot+0x6013fdfa>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:63
+   c:	811d                	c.srli	a0,0x7
+   e:	8082                	c.jr	ra
+
+00000010 <analog_txbuf_no_empty>:
+analog_txbuf_no_empty():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:77
+  10:	801407b7          	lui	a5,0x80140
+  14:	1887c503          	lbu	a0,392(a5) # 0x80140188 <sys_reboot+0x6013fe00>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:78
+  18:	01053513          	sltiu	a0,a0,16
+  1c:	00008067          	ret
+
+00000020 <mspi_busy>:
+mspi_busy():
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:148
+  20:	a40007b7          	lui	a5,0xa4000
+  24:	f287c503          	lbu	a0,-216(a5) # 0xa3ffff28 <sys_reboot+0x83fffba0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:149
+  28:	811d                	c.srli	a0,0x7
+  2a:	8082                	c.jr	ra
+
+0000002c <wait_condition_fails_or_timeout.constprop.0.isra.0>:
+wait_condition_fails_or_timeout.constprop.0.isra.0():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/core.c:96
+  2c:	1101                	c.addi	sp,-32
+  2e:	c452                	c.swsp	s4,8(sp)
+  30:	8a2a                	c.mv	s4,a0
+  32:	ce06                	c.swsp	ra,28(sp)
+  34:	cc22                	c.swsp	s0,24(sp)
+  36:	ca26                	c.swsp	s1,20(sp)
+  38:	c84a                	c.swsp	s2,16(sp)
+  3a:	c64e                	c.swsp	s3,12(sp)
+  3c:	01512223          	sw	s5,4(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:372
+  40:	b80027f3          	csrr	a5,mcycleh
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:373
+  44:	b00026f3          	csrr	a3,mcycle
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:375
+  48:	b8002773          	csrr	a4,mcycleh
+  4c:	fee79ae3          	bne	a5,a4,0x40 <wait_condition_fails_or_timeout.constprop.0.isra.0+0x14>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:392
+  50:	4761                	c.li	a4,24
+  52:	02e58ab3          	mul	s5,a1,a4
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:376
+  56:	8936                	c.mv	s2,a3
+  58:	00078993          	mv	s3,a5
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/core.c:100
+  5c:	9a02                	c.jalr	s4
+  5e:	c50d                	c.beqz	a0,0x88 <wait_condition_fails_or_timeout.constprop.0.isra.0+0x5c>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:372
+  60:	b80027f3          	csrr	a5,mcycleh
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:373
+  64:	b00026f3          	csrr	a3,mcycle
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:375
+  68:	b8002773          	csrr	a4,mcycleh
+  6c:	fee79ae3          	bne	a5,a4,0x60 <wait_condition_fails_or_timeout.constprop.0.isra.0+0x34>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:376
+  70:	8436                	c.mv	s0,a3
+  72:	84be                	c.mv	s1,a5
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:392
+  74:	c324177f          	sub64	a4,s0,s2
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/core.c:101
+  78:	00079463          	bnez	a5,0x80 <wait_condition_fails_or_timeout.constprop.0.isra.0+0x54>
+  7c:	feeaf0e3          	bgeu	s5,a4,0x5c <wait_condition_fails_or_timeout.constprop.0.isra.0+0x30>
+drv_timeout_handler():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/error_handler/error_handler.c:60
+ * @note      This function can be rewritten according to the application scenario.
+ */
+__attribute__((weak)) void drv_timeout_handler(unsigned int error_code)
+{
+    g_error_code = error_code;
+    sys_reboot();
+  80:	20000097          	auipc	ra,0x20000
+  84:	308080e7          	jalr	776(ra) # 0x20000388 <sys_reboot>
+wait_condition_fails_or_timeout.constprop.0.isra.0():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/core.c:107
+  88:	40f2                	c.lwsp	ra,28(sp)
+  8a:	4462                	c.lwsp	s0,24(sp)
+  8c:	44d2                	c.lwsp	s1,20(sp)
+  8e:	4942                	c.lwsp	s2,16(sp)
+  90:	49b2                	c.lwsp	s3,12(sp)
+  92:	4a22                	c.lwsp	s4,8(sp)
+  94:	4a92                	c.lwsp	s5,4(sp)
+  96:	6105                	c.addi16sp	sp,32
+  98:	00008067          	ret
+
+0000009c <analog_read_reg8>:
+analog_read_reg8():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:91
+  9c:	1141                	c.addi	sp,-16
+  9e:	c606                	c.swsp	ra,12(sp)
+  a0:	c422                	c.swsp	s0,8(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:162
+  a2:	300027f3          	csrr	a5,mstatus
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:93
+  a6:	0ff57513          	zext.b	a0,a0
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:163
+  aa:	0437f95b          	bbc	a5,3,0xfc <analog_read_reg8+0x60>
+  ae:	0087f413          	andi	s0,a5,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:164
+  b2:	300477f3          	csrrci	a5,mstatus,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:165
+  b6:	0ff0000f          	fence
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:93
+  ba:	801407b7          	lui	a5,0x80140
+  be:	18a78023          	sb	a0,384(a5) # 0x80140180 <sys_reboot+0x6013fdf8>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:94
+  c2:	4685                	c.li	a3,1
+  c4:	80140737          	lui	a4,0x80140
+  c8:	18d701a3          	sb	a3,387(a4) # 0x80140183 <sys_reboot+0x6013fdfb>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+  cc:	4611                	c.li	a2,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:95
+  ce:	04000713          	li	a4,64
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+  d2:	55fd                	c.li	a1,-1
+  d4:	00400513          	li	a0,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:95
+  d8:	18e78123          	sb	a4,386(a5)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+  dc:	f51ff0ef          	jal	ra,0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:97
+  e0:	801407b7          	lui	a5,0x80140
+  e4:	1847c503          	lbu	a0,388(a5) # 0x80140184 <sys_reboot+0x6013fdfc>
+  e8:	0ff57513          	zext.b	a0,a0
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:180
+  ec:	30042473          	csrrs	s0,mstatus,s0
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:181
+  f0:	0ff0000f          	fence
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:100
+  f4:	40b2                	c.lwsp	ra,12(sp)
+  f6:	4422                	c.lwsp	s0,8(sp)
+  f8:	0141                	c.addi	sp,16
+  fa:	8082                	c.jr	ra
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:93
+  fc:	801407b7          	lui	a5,0x80140
+ 100:	18a78023          	sb	a0,384(a5) # 0x80140180 <sys_reboot+0x6013fdf8>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:94
+ 104:	80140737          	lui	a4,0x80140
+ 108:	4685                	c.li	a3,1
+ 10a:	18d701a3          	sb	a3,387(a4) # 0x80140183 <sys_reboot+0x6013fdfb>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+ 10e:	00400513          	li	a0,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:95
+ 112:	04000713          	li	a4,64
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+ 116:	4611                	c.li	a2,4
+ 118:	55fd                	c.li	a1,-1
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:95
+ 11a:	18e78123          	sb	a4,386(a5)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:96
+ 11e:	3739                	c.jal	0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:97
+ 120:	801407b7          	lui	a5,0x80140
+ 124:	1847c503          	lbu	a0,388(a5) # 0x80140184 <sys_reboot+0x6013fdfc>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:100
+ 128:	40b2                	c.lwsp	ra,12(sp)
+ 12a:	4422                	c.lwsp	s0,8(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:97
+ 12c:	0ff57513          	zext.b	a0,a0
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:100
+ 130:	0141                	c.addi	sp,16
+ 132:	8082                	c.jr	ra
+
+00000134 <analog_write_reg8>:
+analog_write_reg8():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:109
+ 134:	1141                	c.addi	sp,-16
+ 136:	86ae                	c.mv	a3,a1
+ 138:	c606                	c.swsp	ra,12(sp)
+ 13a:	c422                	c.swsp	s0,8(sp)
+ 13c:	c226                	c.swsp	s1,4(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:162
+ 13e:	30002773          	csrr	a4,mstatus
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:112
+ 142:	0ff57793          	zext.b	a5,a0
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:163
+ 146:	0637735b          	bbc	a4,3,0x1ac <analog_write_reg8+0x78>
+ 14a:	00877413          	andi	s0,a4,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:164
+ 14e:	30047773          	csrrci	a4,mstatus,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:165
+ 152:	0ff0000f          	fence
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:111
+ 156:	80140737          	lui	a4,0x80140
+ 15a:	4605                	c.li	a2,1
+ 15c:	18c701a3          	sb	a2,387(a4) # 0x80140183 <sys_reboot+0x6013fdfb>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:112
+ 160:	80140637          	lui	a2,0x80140
+ 164:	18f60023          	sb	a5,384(a2) # 0x80140180 <sys_reboot+0x6013fdf8>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:114
+ 168:	01000513          	li	a0,16
+ 16c:	4615                	c.li	a2,5
+ 16e:	55fd                	c.li	a1,-1
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:113
+ 170:	18d70223          	sb	a3,388(a4)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:114
+ 174:	eb9ff0ef          	jal	ra,0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:115
+ 178:	801404b7          	lui	s1,0x80140
+ 17c:	18248493          	addi	s1,s1,386 # 0x80140182 <sys_reboot+0x6013fdfa>
+ 180:	06000793          	li	a5,96
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:116
+ 184:	4611                	c.li	a2,4
+ 186:	55fd                	c.li	a1,-1
+ 188:	00400513          	li	a0,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:115
+ 18c:	00f48023          	sb	a5,0(s1)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:116
+ 190:	e9dff0ef          	jal	ra,0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:117
+ 194:	00048023          	sb	zero,0(s1)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:180
+ 198:	30042473          	csrrs	s0,mstatus,s0
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:181
+ 19c:	0ff0000f          	fence
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:119
+ 1a0:	40b2                	c.lwsp	ra,12(sp)
+ 1a2:	4422                	c.lwsp	s0,8(sp)
+ 1a4:	4492                	c.lwsp	s1,4(sp)
+ 1a6:	0141                	c.addi	sp,16
+ 1a8:	00008067          	ret
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:111
+ 1ac:	80140737          	lui	a4,0x80140
+ 1b0:	4605                	c.li	a2,1
+ 1b2:	18c701a3          	sb	a2,387(a4) # 0x80140183 <sys_reboot+0x6013fdfb>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:112
+ 1b6:	80140837          	lui	a6,0x80140
+ 1ba:	18f80023          	sb	a5,384(a6) # 0x80140180 <sys_reboot+0x6013fdf8>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:114
+ 1be:	4615                	c.li	a2,5
+ 1c0:	55fd                	c.li	a1,-1
+ 1c2:	01000513          	li	a0,16
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:113
+ 1c6:	18d70223          	sb	a3,388(a4)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:114
+ 1ca:	358d                	c.jal	0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:115
+ 1cc:	80140437          	lui	s0,0x80140
+ 1d0:	18240413          	addi	s0,s0,386 # 0x80140182 <sys_reboot+0x6013fdfa>
+ 1d4:	06000793          	li	a5,96
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:116
+ 1d8:	4611                	c.li	a2,4
+ 1da:	55fd                	c.li	a1,-1
+ 1dc:	00400513          	li	a0,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:115
+ 1e0:	00f40023          	sb	a5,0(s0)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:116
+ 1e4:	e49ff0ef          	jal	ra,0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:117
+ 1e8:	00040023          	sb	zero,0(s0)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/analog.c:119
+ 1ec:	40b2                	c.lwsp	ra,12(sp)
+ 1ee:	4422                	c.lwsp	s0,8(sp)
+ 1f0:	4492                	c.lwsp	s1,4(sp)
+ 1f2:	0141                	c.addi	sp,16
+ 1f4:	00008067          	ret
+
+000001f8 <dr_putchar>:
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:53
+ * @brief      This function serves to format string by GPIO simulate uart.
+ * @param[in]  byte  -  a byte need to print
+ * @return     none.
+ */
+_attribute_ram_code_sec_noinline_ void dr_putchar(unsigned char byte)
+{
+ 1f8:	7179                	c.addi16sp	sp,-48
+ 1fa:	d422                	c.swsp	s0,40(sp)
+ 1fc:	d226                	c.swsp	s1,36(sp)
+ 1fe:	d04a                	c.swsp	s2,32(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:59
+    unsigned char j  = 0;
+    unsigned int  t1 = 0;
+    unsigned int  t2 = 0;
+
+    static unsigned char init_flag = 1;
+    if (init_flag == 1) {
+ 200:	000804b7          	lui	s1,0x80
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:53
+{
+ 204:	d606                	c.swsp	ra,44(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:59
+    if (init_flag == 1) {
+ 206:	0004c903          	lbu	s2,0(s1) # 0x80000 <init_flag.0>
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:53
+{
+ 20a:	842a                	c.mv	s0,a0
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:59
+    if (init_flag == 1) {
+ 20c:	0c195c5b          	beqc	s2,1,0x2e4 <dr_putchar+0xec>
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:80
+        #endif
+
+
+    bit[0] = tmp_bit0;
+    bit[1] = (byte & 0x01) ? tmp_bit1 : tmp_bit0;
+    bit[2] = ((byte >> 1) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 210:	0414235b          	bfoz	t1,s0,1,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:82
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+    bit[4] = ((byte >> 3) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 214:	0c34285b          	bfoz	a6,s0,3,3
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:84
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+    bit[6] = ((byte >> 5) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 218:	145425db          	bfoz	a1,s0,5,5
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:86
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+    bit[8] = ((byte >> 7) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 21c:	00745713          	srli	a4,s0,0x7
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:80
+    bit[2] = ((byte >> 1) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 220:	137d                	c.addi	t1,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:82
+    bit[4] = ((byte >> 3) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 222:	187d                	c.addi	a6,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:84
+    bit[6] = ((byte >> 5) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 224:	15fd                	c.addi	a1,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:86
+    bit[8] = ((byte >> 7) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 226:	177d                	c.addi	a4,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:80
+    bit[2] = ((byte >> 1) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 228:	0ff37313          	zext.b	t1,t1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:82
+    bit[4] = ((byte >> 3) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 22c:	0ff87813          	zext.b	a6,a6
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:84
+    bit[6] = ((byte >> 5) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 230:	0ff5f593          	zext.b	a1,a1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:86
+    bit[8] = ((byte >> 7) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 234:	0ff77713          	zext.b	a4,a4
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:78
+    bit[0] = tmp_bit0;
+ 238:	10000e13          	li	t3,256
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:82
+    bit[4] = ((byte >> 3) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 23c:	0805                	c.addi	a6,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:84
+    bit[6] = ((byte >> 5) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 23e:	0585                	c.addi	a1,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:78
+    bit[0] = tmp_bit0;
+ 240:	01c11623          	sh	t3,12(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:80
+    bit[2] = ((byte >> 1) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 244:	0305                	c.addi	t1,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:86
+    bit[8] = ((byte >> 7) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 246:	0705                	c.addi	a4,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:82
+    bit[4] = ((byte >> 3) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 248:	01011a23          	sh	a6,20(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:84
+    bit[6] = ((byte >> 5) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 24c:	00b11c23          	sh	a1,24(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:80
+    bit[2] = ((byte >> 1) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 250:	00611823          	sh	t1,16(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:86
+    bit[8] = ((byte >> 7) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 254:	00e11e23          	sh	a4,28(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:81
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 258:	082428db          	bfoz	a7,s0,2,2
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:83
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 25c:	1044255b          	bfoz	a0,s0,4,4
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:85
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 260:	186426db          	bfoz	a3,s0,6,6
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:79
+    bit[1] = (byte & 0x01) ? tmp_bit1 : tmp_bit0;
+ 264:	000437db          	bfos	a5,s0,0,0
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:81
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 268:	18fd                	c.addi	a7,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:83
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 26a:	157d                	c.addi	a0,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:85
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 26c:	16fd                	c.addi	a3,-1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:79
+    bit[1] = (byte & 0x01) ? tmp_bit1 : tmp_bit0;
+ 26e:	f017f793          	andi	a5,a5,-255
+ 272:	10078793          	addi	a5,a5,256
+stimer_get_tick():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/lib/include/stimer.h:228
+ * @brief     This function performs to get system timer tick.
+ * @return    system timer tick value.
+ */
+static _always_inline unsigned int stimer_get_tick(void)
+{
+    return reg_system_tick;
+ 276:	80140637          	lui	a2,0x80140
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:81
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 27a:	0ff8f893          	zext.b	a7,a7
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:83
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 27e:	0ff57513          	zext.b	a0,a0
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:85
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 282:	0ff6f693          	zext.b	a3,a3
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:81
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 286:	0885                	c.addi	a7,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:83
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 288:	0505                	c.addi	a0,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:85
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 28a:	0685                	c.addi	a3,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:79
+    bit[1] = (byte & 0x01) ? tmp_bit1 : tmp_bit0;
+ 28c:	00f11723          	sh	a5,14(sp)
+stimer_get_tick():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/lib/include/stimer.h:228
+ 290:	20060613          	addi	a2,a2,512 # 0x80140200 <sys_reboot+0x6013fe78>
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:87
+    bit[9] = tmp_bit1;
+ 294:	4785                	c.li	a5,1
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:81
+    bit[3] = ((byte >> 2) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 296:	01111923          	sh	a7,18(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:83
+    bit[5] = ((byte >> 4) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 29a:	00a11b23          	sh	a0,22(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:95
+    for (j = 0; j < 10; j++) {
+        t2 = t1;
+        while (t1 - t2 < BIT_INTERVAL) {
+            t1 = stimer_get_tick();
+        }
+        TX_PIN_OUTPUT_REG = bit[j]; //send bit0
+ 29e:	80141837          	lui	a6,0x80141
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:85
+    bit[7] = ((byte >> 6) & 0x01) ? tmp_bit1 : tmp_bit0;
+ 2a2:	00d11d23          	sh	a3,26(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:87
+    bit[9] = tmp_bit1;
+ 2a6:	00f11f23          	sh	a5,30(sp)
+stimer_get_tick():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/lib/include/stimer.h:228
+ 2aa:	4214                	c.lw	a3,0(a2)
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:90
+    for (j = 0; j < 10; j++) {
+ 2ac:	00c10513          	addi	a0,sp,12
+ 2b0:	02010893          	addi	a7,sp,32
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:92
+        while (t1 - t2 < BIT_INTERVAL) {
+ 2b4:	0cf00593          	li	a1,207
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:95
+        TX_PIN_OUTPUT_REG = bit[j]; //send bit0
+ 2b8:	c0480813          	addi	a6,a6,-1020 # 0x80140c04 <sys_reboot+0x6014087c>
+stimer_get_tick():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/lib/include/stimer.h:228
+ 2bc:	421c                	c.lw	a5,0(a2)
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:92
+        while (t1 - t2 < BIT_INTERVAL) {
+ 2be:	40d78733          	sub	a4,a5,a3
+ 2c2:	fee5fde3          	bgeu	a1,a4,0x2bc <dr_putchar+0xc4>
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:95 (discriminator 2)
+        TX_PIN_OUTPUT_REG = bit[j]; //send bit0
+ 2c6:	00055703          	lhu	a4,0(a0)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:90 (discriminator 2)
+    for (j = 0; j < 10; j++) {
+ 2ca:	0509                	c.addi	a0,2
+stimer_get_tick():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/lib/include/stimer.h:228 (discriminator 2)
+ 2cc:	86be                	c.mv	a3,a5
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:95 (discriminator 2)
+        TX_PIN_OUTPUT_REG = bit[j]; //send bit0
+ 2ce:	00e81023          	sh	a4,0(a6)
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:90 (discriminator 2)
+    for (j = 0; j < 10; j++) {
+ 2d2:	ff1515e3          	bne	a0,a7,0x2bc <dr_putchar+0xc4>
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:97
+    }
+}
+ 2d6:	50b2                	c.lwsp	ra,44(sp)
+ 2d8:	5422                	c.lwsp	s0,40(sp)
+ 2da:	5492                	c.lwsp	s1,36(sp)
+ 2dc:	5902                	c.lwsp	s2,32(sp)
+ 2de:	6145                	c.addi16sp	sp,48
+ 2e0:	00008067          	ret
+gpio_function_en():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:585
+ * @return     none.
+ */
+static inline void gpio_function_en(gpio_pin_e pin)
+{
+    unsigned char bit = pin & 0xff;
+    BM_SET(reg_gpio_func(pin), bit);
+ 2e4:	801417b7          	lui	a5,0x80141
+ 2e8:	c067c703          	lbu	a4,-1018(a5) # 0x80140c06 <sys_reboot+0x6014087e>
+gpio_set_up_down_res():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.c:488
+        shift_num = 6;
+        mask_not  = 0x3f;
+    } else {
+        return;
+    }
+    analog_write_reg8(base_ana_reg, (analog_read_reg8(base_ana_reg) & mask_not) | (r_val << shift_num));
+ 2ec:	455d                	c.li	a0,23
+gpio_function_en():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:585
+ 2ee:	00176713          	ori	a4,a4,1
+ 2f2:	c0e78323          	sb	a4,-1018(a5)
+gpio_set_up_down_res():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.c:488
+ 2f6:	335d                	c.jal	0x9c <analog_read_reg8>
+ 2f8:	0fc57593          	andi	a1,a0,252
+ 2fc:	0015e593          	ori	a1,a1,1
+ 300:	455d                	c.li	a0,23
+ 302:	3d0d                	c.jal	0x134 <analog_write_reg8>
+gpio_output_en():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:683
+ * @return     none.
+ */
+static inline void gpio_output_en(gpio_pin_e pin)
+{
+    unsigned char bit = pin & 0xff;
+    BM_CLR(reg_gpio_oen(pin), bit);
+ 304:	80141737          	lui	a4,0x80141
+ 308:	c0274783          	lbu	a5,-1022(a4) # 0x80140c02 <sys_reboot+0x6014087a>
+gpio_set_high_level():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:607
+    reg_gpio_out_set(pin) = bit;
+ 30c:	801416b7          	lui	a3,0x80141
+gpio_output_en():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:683
+    BM_CLR(reg_gpio_oen(pin), bit);
+ 310:	0fe7f793          	andi	a5,a5,254
+ 314:	c0f70123          	sb	a5,-1022(a4)
+gpio_set_high_level():
+/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/drivers/gpio.h:607
+    reg_gpio_out_set(pin) = bit;
+ 318:	c1268223          	sb	s2,-1020(a3) # 0x80140c04 <sys_reboot+0x6014087c>
+dr_putchar():
+/cygdrive/c/Git/led-demo-tlsr8258/demo/vendor/common/common/printf.c:64
+        init_flag = 0;
+ 31c:	00048023          	sb	zero,0(s1)
+ 320:	ef1ff06f          	j	0x210 <dr_putchar+0x18>
+
+00000324 <sys_reboot_ram>:
+sys_reboot_ram():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/sys.c:49
+ 324:	1141                	c.addi	sp,-16
+ 326:	c606                	c.swsp	ra,12(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:162
+ 328:	300027f3          	csrr	a5,mstatus
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:163
+ 32c:	0037f65b          	bbc	a5,3,0x338 <sys_reboot_ram+0x14>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:164
+ 330:	300477f3          	csrrci	a5,mstatus,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/core.h:165
+ 334:	0ff0000f          	fence
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:445
+ 338:	a40007b7          	lui	a5,0xa4000
+ 33c:	f1c7c683          	lbu	a3,-228(a5) # 0xa3ffff1c <sys_reboot+0x83fffb94>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:457
+ 340:	a4000737          	lui	a4,0xa4000
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:445
+ 344:	0046e693          	ori	a3,a3,4
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:457
+ 348:	f2870713          	addi	a4,a4,-216 # 0xa3ffff28 <sys_reboot+0x83fffba0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:445
+ 34c:	f0d78e23          	sb	a3,-228(a5)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:457
+ 350:	00074783          	lbu	a5,0(a4)
+ 354:	0307f793          	andi	a5,a5,48
+ 358:	ffe5                	c.bnez	a5,0x350 <sys_reboot_ram+0x2c>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:460
+ 35a:	460d                	c.li	a2,3
+ 35c:	55fd                	c.li	a1,-1
+ 35e:	02000513          	li	a0,32
+ 362:	31e9                	c.jal	0x2c <wait_condition_fails_or_timeout.constprop.0.isra.0>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:435
+ 364:	a40007b7          	lui	a5,0xa4000
+ 368:	f1c7c703          	lbu	a4,-228(a5) # 0xa3ffff1c <sys_reboot+0x83fffb94>
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/pm/pm_internal.h:123
+ 36c:	801416b7          	lui	a3,0x80141
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/mspi.h:435
+ 370:	0f777713          	andi	a4,a4,247
+ 374:	f0e78e23          	sb	a4,-228(a5)
+/cygdrive/c/Git/led-demo-tlsr8258/build/C:\telink_b91m_platform_src\chip\tl322x\drivers/lib/include/pm/pm_internal.h:123
+ 378:	02000793          	li	a5,32
+ 37c:	82f687a3          	sb	a5,-2001(a3) # 0x8014082f <sys_reboot+0x601404a7>
+ 380:	a001                	c.j	0x380 <sys_reboot_ram+0x5c>
+
+Disassembly of section .text:
+
+20000388 <sys_reboot>:
+sys_reboot():
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/sys.c:62
+20000388:	1141                	c.addi	sp,-16
+2000038a:	c606                	c.swsp	ra,12(sp)
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/sys.c:64
+2000038c:	7d047073          	csrci	mmisc_ctl,8
+/cygdrive/c/Git/led-demo-tlsr8258/build/../../../telink_b91m_platform_src/project/tlsr_riscv/tl322x/UART_Demo/../../../../chip/tl322x/drivers/lib/src/sys.c:65
+20000390:	e0000097          	auipc	ra,0xe0000
+20000394:	f94080e7          	jalr	-108(ra) # 0x324 <sys_reboot_ram>
