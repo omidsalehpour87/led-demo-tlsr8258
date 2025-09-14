@@ -97,3 +97,8 @@ When running the demo on the 48-pin TLSR8258 dev board, take care of GPIO/LED nu
 - Ensure CMake is in your PATH (`cmake --version` should work). If not found add it to windows PATH  
 - If the build fails with `undefined symbol __N22_*`, check that the correct linker script is selected (`chip/tl322x/link/N22/flash_boot_ramcode.link`).  
 - If flashing fails, confirm the COM port of your USB dongle in Windows Device Manager.
+
+## useful links 
+- [Telink Product Page](https://products.telink-semi.cn/#/)  
+- [TLSR8258 Dev Board User Manual (PDF)](https://doc.telink-semi.cn/doc/hardware/devboard/UM-TLSR8258-E_TLSR8258_Development_Board_User_Manual.pdf)  
+- [Telink Wiki](https://wiki.telink-semi.cn/wiki/index.html)
