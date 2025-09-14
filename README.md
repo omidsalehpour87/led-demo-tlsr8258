@@ -10,10 +10,10 @@ The demo toggles GPIO pins to drive onboard LEDs, illustrating basic GPIO config
 
 ## 2. CPU Information
 - **SoC Family**: Telink TLSR8258 / TL322x series  
-- **Core**: RISC-V (N22/D25F depending on variant)  
+- **Core**: RISC 32bit MCU (N22/D25F depending on variant)  
 - **Memory**:  
-  - DRAM: 128 KB  
-  - IRAM: 16 KB  
+  - 512kb internal flash  
+  - 48kb: SRAM  
 - **Peripherals**: GPIO, I²C, SPI, UART, PWM, ADC, USB, Bluetooth 5.0 LE (depending on package)
 
 ---
@@ -36,7 +36,7 @@ Option 1: clone the official Telink SDK (used inside Telink IoT Studio)
 git clone https://github.com/TelinkSemi/tl_platform_sdk.git
 
 Option 2: clone this assignment project with CMake build support
-git clone git@github.com:omidsalehpour87/led-demo-tlsr8258.git
+git clone git@github.com:omidsalehpour87/led-demo-tlsr8258.git -b demo-led-blinky
 ```
 
 ## 4. Build Instructions
@@ -47,6 +47,7 @@ Telink IoT Studio supports SDK or projects import for TLSR8 series chip.
 
 Users can use the File -> Import... to import SDK or projects
 - Select the 32xx project.
+- select the gpio demo project
 - Build via Project → Build.
 - Output artifacts will be generated:
  - GPIO_Demo.elf (for debugging)
@@ -90,6 +91,7 @@ When running the demo on the 48-pin TLSR8258 dev board, take care of GPIO/LED nu
 ## 7. Next steps
 - Explore other SDK demos such as `UART_Demo` or `SPI_Demo`.  
 - Try to integrate BLE functionality to toggle LEDs wirelessly.
+- integrate the flashing tool in the cmake project 
 
 ## trouble shooting
 - Ensure CMake is in your PATH (`cmake --version` should work). If not found add it to windows PATH  
