@@ -5,13 +5,12 @@ set(CMAKE_SYSTEM_PROCESSOR riscv32)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 # toolchain name : TL32 ELF MCULIB V5F GCC12.2
 set(TOOLCHAIN_PATH C:/TelinkIoTStudio/RDS/V5.3.x/toolchains/nds32le-elf-mculib-v5f)
-set(CMAKE_C_COMPILER ${TOOLCHAIN_PATH}/bin/riscv32-elf-gcc)
-set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PATH}/bin/riscv32-elf-g++)
-set(CMAKE_ASM_COMPILER ${TOOLCHAIN_PATH}/bin/riscv32-elf-gcc)
-set(CMAKE_OBJDUMP ${TOOLCHAIN_PATH}/bin/riscv32-elf-objdump)
-set(CMAKE_OBJCOPY ${TOOLCHAIN_PATH}/bin/riscv32-elf-objcopy)
-set(CMAKE_PRINTSIZE ${TOOLCHAIN_PATH}/bin/riscv32-elf-size)
-
+set(CMAKE_C_COMPILER   "${TOOLCHAIN_PATH}/bin/riscv32-elf-gcc.exe")
+set(CMAKE_CXX_COMPILER "${TOOLCHAIN_PATH}/bin/riscv32-elf-g++.exe")
+set(CMAKE_ASM_COMPILER "${TOOLCHAIN_PATH}/bin/riscv32-elf-gcc.exe")
+set(CMAKE_OBJDUMP      "${TOOLCHAIN_PATH}/bin/riscv32-elf-objdump.exe")
+set(CMAKE_OBJCOPY      "${TOOLCHAIN_PATH}/bin/riscv32-elf-objcopy.exe")
+set(CMAKE_PRINTSIZE    "${TOOLCHAIN_PATH}/bin/riscv32-elf-size.exe")
 project(TL_PLATFORM_SDK_322X LANGUAGES ASM C)
 
 add_compile_options(-fno-lto)
@@ -131,7 +130,7 @@ target_link_options(GPIO_Demo PRIVATE
     -Wundef
     -Xlinker --gc-sections
     -nostartfiles
-    -T${ProjDirPath}/chip/tl322x/link/D25F/flash_boot.link   # ✅ still D25F linker
+    -T${ProjDirPath}/chip/tl322x/link/D25F/flash_boot.link 
     -mcpu=d25f                                             
     -fomit-frame-pointer
     -fno-strict-aliasing

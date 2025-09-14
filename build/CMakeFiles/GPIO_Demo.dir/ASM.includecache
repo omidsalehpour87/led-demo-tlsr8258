@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_flash.S
+C:/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_flash.S
 
-/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_ram.S
+C:/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_ram.S
 
-/cygdrive/c/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_rram.S
+C:/Git/led-demo-tlsr8258/chip/tl322x/boot/N22/cstartup_rram.S
 

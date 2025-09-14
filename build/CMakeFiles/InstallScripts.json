@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Git/led-demo-tlsr8258/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -87,6 +87,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GPIO_Demo.dir/demo/vendor/common/common/printf.c.obj"
   "CMakeFiles/GPIO_Demo.dir/demo/vendor/common/common/printf.c.obj.d"
   "GPIO_Demo"
+  "GPIO_Demo.manifest"
   "GPIO_Demo.pdb"
 )
 
